@@ -24,14 +24,77 @@
     <!--FIM_CABECALHO-->
 
     <main>
+            
+        <h2>Envie sua Mensagem</h2>
+        <p>Preencha o formulário abaixo. Retornaremos o mais breve possível!</p>
 
+        <!--FORMS-->
+        <form action="#" method="get">
+            
+            <table border="0" cellpadding="8">
+                <tbody>
+                    <!-- TEXT-->
+                    <tr>
+                        <td><label for="nome">Nome Completo:</label></td>
+                        <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome" required autofocus></td>
+                    </tr>
+                    
+                    <!--EMAIL-->
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="seu@email.com" required></td>
+                    </tr>
+
+                    <!--DATE-->
+                    <tr>
+                        <td><label for="data">Data:</label></td>
+                        <td><input type="date" id="data" name="data"></td>
+                    </tr>
+
+                    <!--SELECT_OPTION-->
+                    <tr>
+                        <td><label>Assunto de interesse:</label></td>
+                        <td>
+                            <input type="radio" id="assunto_passeio" name="assunto" value="Passeio" required>
+                            <label for="assunto_passeio">Serviço de Passeio</label><br>
+                            
+                            <input type="radio" id="assunto_produto" name="assunto" value="Produto">
+                            <label for="assunto_produto">Produtos do Pet Shop</label>
+                        </td>
+                    </tr>
+
+                    <!-- NEWSLLETER-->
+                    <tr>
+                        <td><label>Atualizações:</label></td>
+                        <td>
+                            <input type="checkbox" id="news" name="news" value="sim" checked>
+                            <label for="news">Quero receber ofertas e novidades da Ualk Pet</label>
+                        </td>
+                    </tr>
+
+                    <!--WRITE_MESSAGE-->
+                    <tr>
+                        <td><label for="mensagem">Sua Mensagem:</label></td>
+                        <td><textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Escreva sua dúvida ou comentário aqui..." required></textarea></td>
+                    </tr>
+
+                    <!--BUTTON_SEND/CLEAN-->
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Enviar Mensagem">
+                            <input type="reset" value="Limpar Formulário">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <!--FIM_FORMS-->
 
         <!--RODAPE-->
         <footer>
 
             <h2>Canais de Atendimento</h2>
-            <p>Você pode entrar em contato conosco através dos nossos canais rápidos ou aguardar a próxima aula para
-                preencher nosso formulário de mensagens!</p>
 
             <!--CONTATO-->
             <ul>
