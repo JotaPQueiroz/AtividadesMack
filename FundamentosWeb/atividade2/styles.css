@@ -1,0 +1,186 @@
+
+
+/* CSS_Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7; 
+    color: #4e342e; 
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 4px solid #fbc02d; 
+}
+
+header h1 {
+    color: #5d4037; 
+    margin-bottom: 5px;
+}
+
+.logotipo {
+    max-width: 200px;
+    margin: 15px 0;
+}
+
+/* Navegação */
+nav {
+    background-color: #5d4037; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fbc02d; 
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fbc02d;
+    color: #5d4037;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    color: #5d4037;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Listas (Home) */
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Vídeo (Home) */
+.video_passeio {
+    max-width: 100%;
+    width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 3px solid #fbc02d;
+}
+
+/* Lista de Produtos*/
+.lista_produtos {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.item_produto {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.imagem_produto {
+    max-width: 250px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.botao_comprar {
+    display: inline-block;
+    background-color: #fbc02d;
+    color: #5d4037;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.botao_comprar:hover {
+    background-color: #f9a825;
+}
+
+/* Formulário e Tabelas (Contato) */
+.tabela_formulario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela_formulario td {
+    padding: 12px;
+    vertical-align: top;
+}
+
+.tabela_formulario label {
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.botoes_formulario {
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #5d4037;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #3e2723;
+}
