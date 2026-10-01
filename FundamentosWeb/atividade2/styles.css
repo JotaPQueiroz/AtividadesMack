@@ -9,16 +9,26 @@
 }
 
 body {
-    background-color: #fdfbf7; 
+    background-image: url('images/bg.png');  
+    background-size:cover; /* Faz a imagem caber perfeitamente dentro dos 200px */
+    background-repeat:no-repeat; /* Evita que a imagem se multiplique como um mosaico */
+    background-position: center;
+    position:relative;
     color: #4e342e; 
 }
 
 /* Cabeçalho */
 header {
-    background-color: #fff;
+    
+    background-image: url('images/bgimg.png');  
     text-align: center;
     padding: 20px 0;
+    background-size:cover; /* Faz a imagem caber perfeitamente dentro dos 200px */
+    background-repeat: no-repeat; /* Evita que a imagem se multiplique como um mosaico */
+    background-position: center;
     border-bottom: 4px solid #fbc02d; 
+    position: relative;
+    top: 5px;
 }
 
 header h1 {
