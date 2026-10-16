@@ -194,3 +194,243 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #3e2723;
 }
+
+/* Resposividade */
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #4e342e;
+}
+
+/* CABEÇALHO */
+header {
+    background-image: url('images/bgimg.png');
+    text-align: center;
+    padding: 20px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 4px solid #fbc02d;
+    position: relative;
+    top: 5px;
+}
+
+header h3 {
+    color: #5d4037;
+    margin: 5px 15px 15px;
+}
+
+.logotipo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    background-color: #5d4037;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fbc02d;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fbc02d;
+    color: #5d4037;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #5d4037;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* LISTA DE PLANOS */
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* VÍDEO */
+.video_passeio {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 3px solid #fbc02d;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff8e1;
+    border-top: 3px solid #fbc02d;
+    border-radius: 8px;
+}
+
+footer ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+footer li {
+    overflow-wrap: anywhere;
+}
+
+/* RESPONSIVIDADE - CELULARES */
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Cabeçalho */
+    header {
+        top: 0;
+        padding: 10px 0;
+    }
+
+    .logotipo {
+        max-width: 140px;
+        margin: 10px 0;
+    }
+
+    header h3 {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0 12px;
+        margin-bottom: 15px;
+    }
+
+    /* Menu vertical */
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 5px 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 12px 5px;
+        font-size: 15px;
+    }
+
+    /* Conteúdo */
+    main {
+        width: 94%;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h2, h3 {
+        font-size: 19px;
+        line-height: 1.4;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+
+    ol {
+        margin-left: 20px;
+        padding-right: 3px;
+        line-height: 1.7;
+    }
+
+    ol li {
+        margin-bottom: 8px;
+    }
+
+    /* Vídeo adaptado à tela */
+    .video_passeio {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    /* Rodapé */
+    footer {
+        margin-top: 20px;
+        padding: 12px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    footer ul {
+        padding-left: 18px;
+    }
+
+    footer li {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
