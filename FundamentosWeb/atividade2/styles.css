@@ -1,6 +1,4 @@
-
-
-/* CSS_Reset */
+/*   CSS RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,38 +8,40 @@
 
 body {
     background-image: url('images/bg.png');  
-    background-size:cover; /* Faz a imagem caber perfeitamente dentro dos 200px */
-    background-repeat:no-repeat; /* Evita que a imagem se multiplique como um mosaico */
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    position:relative;
+    position: relative;
     color: #4e342e; 
+    background-color: #fdfbf7;
 }
 
-/* Cabeçalho */
+/*    CABEÇALHO */
 header {
-    
     background-image: url('images/bgimg.png');  
     text-align: center;
     padding: 20px 0;
-    background-size:cover; /* Faz a imagem caber perfeitamente dentro dos 200px */
-    background-repeat: no-repeat; /* Evita que a imagem se multiplique como um mosaico */
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     border-bottom: 4px solid #fbc02d; 
     position: relative;
     top: 5px;
 }
 
-header h1 {
+header h3 {
     color: #5d4037; 
-    margin-bottom: 5px;
+    margin: 5px 15px 15px;
 }
 
 .logotipo {
     max-width: 200px;
+    width: 100%;
+    height: auto;
     margin: 15px 0;
 }
 
-/* Navegação */
+/*   NAVEGAÇÃO*/
 nav {
     background-color: #5d4037; 
 }
@@ -58,6 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
+    display: inline-block;
     text-decoration: none;
     color: #fbc02d; 
     font-weight: bold;
@@ -72,8 +73,9 @@ nav ul li a:hover {
     color: #5d4037;
 }
 
-/* Conteúdo Principal */
+/*    CONTEÚDO PRINCIPAL*/
 main {
+    width: 100%;
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
@@ -93,214 +95,12 @@ p {
     margin-bottom: 15px;
 }
 
-/* Listas (Home) */
 ol {
     margin-left: 20px;
     margin-bottom: 20px;
     line-height: 1.8;
 }
 
-/* Vídeo (Home) */
-.video_passeio {
-    max-width: 100%;
-    width: 600px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    border: 3px solid #fbc02d;
-}
-
-/* Lista de Produtos*/
-.lista_produtos {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.item_produto {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.imagem_produto {
-    max-width: 250px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-
-.botao_comprar {
-    display: inline-block;
-    background-color: #fbc02d;
-    color: #5d4037;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-.botao_comprar:hover {
-    background-color: #f9a825;
-}
-
-/* Formulário e Tabelas (Contato) */
-.tabela_formulario {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.tabela_formulario td {
-    padding: 12px;
-    vertical-align: top;
-}
-
-.tabela_formulario label {
-    font-weight: bold;
-}
-
-
-input[type="text"],
-input[type="email"],
-input[type="date"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-
-.botoes_formulario {
-    text-align: center;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    background-color: #5d4037;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-weight: bold;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 5px;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #3e2723;
-}
-
-/* Resposividade */
-
-/* RESET CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-image: url('images/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    color: #4e342e;
-}
-
-/* CABEÇALHO */
-header {
-    background-image: url('images/bgimg.png');
-    text-align: center;
-    padding: 20px 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-bottom: 4px solid #fbc02d;
-    position: relative;
-    top: 5px;
-}
-
-header h3 {
-    color: #5d4037;
-    margin: 5px 15px 15px;
-}
-
-.logotipo {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
-}
-
-/* NAVEGAÇÃO */
-nav {
-    background-color: #5d4037;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fbc02d;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #fbc02d;
-    color: #5d4037;
-}
-
-/* CONTEÚDO PRINCIPAL */
-main {
-    width: 100%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2, h3 {
-    color: #5d4037;
-    margin-bottom: 15px;
-    margin-top: 20px;
-}
-
-p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* LISTA DE PLANOS */
-ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-/* VÍDEO */
 .video_passeio {
     display: block;
     width: 600px;
@@ -311,34 +111,108 @@ ol {
     border: 3px solid #fbc02d;
 }
 
-/* RODAPÉ */
+/*   RODAPÉ */
 footer {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #fff8e1;
-    border-top: 3px solid #fbc02d;
-    border-radius: 8px;
+    background-color: #fdfbf7; /* Fundo creme claro da paleta */
+    border-top: 1px solid #e0d7c6;
+    padding: 40px 50px 25px;
+    margin-top: 40px;
+    color: #5d4037;
 }
 
-footer ul {
-    padding-left: 20px;
-    line-height: 1.8;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto 30px auto;
 }
 
-footer li {
-    overflow-wrap: anywhere;
+.footer-brand h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #5d4037;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.5px;
 }
 
-/* RESPONSIVIDADE - CELULARES */
-@media screen and (max-width: 480px) {
+.footer-brand p {
+    font-size: 0.9em;
+    color: #7d6155;
+    margin: 0;
+}
 
-    body {
-        font-size: 14px;
-        background-size: cover;
-        background-position: center;
+.footer-links {
+    display: flex;
+    gap: 25px;
+    padding-top: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5d4037;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #fbc02d; 
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #e0d7c6;
+    max-width: 1100px;
+    margin: 0 auto 20px auto;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 0.8em;
+    color: #8d6e63;
+}
+
+.footer-bottom .copyright {
+    margin: 0;
+    color: #8d6e63;
+}
+
+.footer-info {
+    font-size: 0.95em;
+}
+
+.footer-info strong {
+    color: #5d4037;
+}
+
+/*   RESPONSIVIDADE (CELULARES)*/
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 30px 20px 20px;
     }
 
-    /* Cabeçalho */
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
     header {
         top: 0;
         padding: 10px 0;
@@ -346,145 +220,25 @@ footer li {
 
     .logotipo {
         max-width: 140px;
-        margin: 10px 0;
     }
 
-    header h3 {
-        font-size: 16px;
-        line-height: 1.5;
-        padding: 0 12px;
-        margin-bottom: 15px;
-    }
-
-    /* Menu vertical */
     nav ul {
         flex-direction: column;
-        align-items: stretch;
-        padding: 5px 0;
     }
 
     nav ul li {
-        width: 100%;
         margin: 0;
         text-align: center;
     }
 
     nav ul li a {
         display: block;
-        width: 100%;
         padding: 12px 5px;
-        font-size: 15px;
     }
 
-    /* Conteúdo */
     main {
         width: 94%;
         margin: 15px auto;
         padding: 15px;
-        border-radius: 8px;
     }
-
-    h2, h3 {
-        font-size: 19px;
-        line-height: 1.4;
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 1.6;
-        overflow-wrap: break-word;
-    }
-
-    ol {
-        margin-left: 20px;
-        padding-right: 3px;
-        line-height: 1.7;
-    }
-
-    ol li {
-        margin-bottom: 8px;
-    }
-
-    /* Vídeo adaptado à tela */
-    .video_passeio {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 15px auto;
-    }
-
-    /* RODAPÉ ESTILIZADO */
-footer {
-    margin-top: 40px;
-    padding: 30px 20px 10px;
-    background-color: #fff8e1;
-    border-top: 4px solid #fbc02d;
-    border-radius: 8px 8px 0 0;
-    color: #4e342e;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.footer-col {
-    flex: 1;
-    min-width: 280px;
-}
-
-.footer-col h3, 
-.info-aluno h4 {
-    color: #5d4037;
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-size: 1.2em;
-    border-bottom: 2px solid #fbc02d;
-    padding-bottom: 5px;
-    display: inline-block;
-}
-
-.contato-lista {
-    list-style: none;
-    padding: 0;
-    line-height: 1.8;
-}
-
-/* Estilização da caixa de dados do JavaScript */
-.info-aluno {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 6px;
-    border-left: 4px solid #5d4037;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.info-aluno p {
-    margin-bottom: 6px;
-    font-size: 0.95em;
-}
-
-/* Linha inferior de Copyright */
-.footer-bottom {
-    text-align: center;
-    margin-top: 25px;
-    padding-top: 15px;
-    border-top: 1px solid #ffe082;
-    font-size: 0.85em;
-    color: #6d4c41;
-}
-
-/* Responsividade do Rodapé */
-@media screen and (max-width: 600px) {
-    .footer-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
 }
