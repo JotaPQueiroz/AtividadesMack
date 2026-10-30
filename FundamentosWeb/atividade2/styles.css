@@ -415,22 +415,76 @@ footer li {
         margin: 15px auto;
     }
 
-    /* Rodapé */
-    footer {
-        margin-top: 20px;
-        padding: 12px;
-    }
+    /* RODAPÉ ESTILIZADO */
+footer {
+    margin-top: 40px;
+    padding: 30px 20px 10px;
+    background-color: #fff8e1;
+    border-top: 4px solid #fbc02d;
+    border-radius: 8px 8px 0 0;
+    color: #4e342e;
+}
 
-    footer h2 {
-        font-size: 18px;
-    }
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-    footer ul {
-        padding-left: 18px;
-    }
+.footer-col {
+    flex: 1;
+    min-width: 280px;
+}
 
-    footer li {
-        font-size: 13px;
-        overflow-wrap: anywhere;
+.footer-col h3, 
+.info-aluno h4 {
+    color: #5d4037;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #fbc02d;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.contato-lista {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Estilização da caixa de dados do JavaScript */
+.info-aluno {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #5d4037;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.info-aluno p {
+    margin-bottom: 6px;
+    font-size: 0.95em;
+}
+
+/* Linha inferior de Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #ffe082;
+    font-size: 0.85em;
+    color: #6d4c41;
+}
+
+/* Responsividade do Rodapé */
+@media screen and (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
     }
+}
 }
