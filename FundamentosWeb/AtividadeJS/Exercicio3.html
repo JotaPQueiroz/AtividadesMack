@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times esportivos</title>
+
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+            margin: 30px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .time {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            border-radius: 8px;
+            padding: 18px;
+            margin: 15px auto;
+            max-width: 550px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        
+
+        .roxo {
+            background-color: #7136a8;
+            color: white;
+            border-left: 6px solid #4b1d78;
+        }
+
+        .branco {
+            background-color: white;
+            color: #222;
+            border-left: 6px solid #b8b8b8;
+        }
+
+        .azul {
+            background-color: #1769aa;
+            color: white;
+            border-left: 6px solid #0d4777;
+        }
+
+        
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .informacoes {
+            display: inline-block;
+        }
+
+       
+
+        .selecionado {
+            transform: scale(1.12);
+            max-width: 700px;
+            padding: 35px;
+            margin: 40px auto;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .selecionado .logo {
+            width: 140px;
+            height: 140px;
+        }
+
+       
+
+        .oculto {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                margin: 16px;
+            }
+
+            .time {
+                gap: 12px;
+                padding: 14px;
+            }
+
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .selecionado {
+                transform: scale(1.03);
+                padding: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Times esportivos</h1>
+    <h2>Informações dos times</h2>
+
+    <script>
+
+        
+
+        var meu_array = [
+            "Basquete", "Raptors", "roxo", 5,
+            "Futebol", "Santos", "branco", 12,
+            "Vôlei", "Pinheiros", "azul", 6
+        ];
+
+        
+        var logos = [
+            "images/Raptors.png",
+            "images/Santos.png",
+            "images/Pinheiros.png"
+        ];
+
+        
+
+        function selecionarCard(card) {
+
+            var cards = document.getElementsByClassName("time");
+
+           
+
+            if (card.classList.contains("selecionado")) {
+
+                
+
+                for (var j = 0; j < cards.length; j++) {
+                    cards[j].classList.remove("selecionado");
+                    cards[j].classList.remove("oculto");
+                }
+
+            } else {
+
+                
+
+                for (var j = 0; j < cards.length; j++) {
+
+                    cards[j].classList.remove("selecionado");
+                    cards[j].classList.add("oculto");
+
+                }
+
+                
+
+                card.classList.remove("oculto");
+                card.classList.add("selecionado");
+
+            }
+        }
+
+        
+
+        for (var i = 0; i < meu_array.length; i += 4) {
+
+            var classeCor = "";
+
+           
+
+            if (meu_array[i + 2] == "roxo") {
+
+                classeCor = "roxo";
+
+            } else if (meu_array[i + 2] == "branco") {
+
+                classeCor = "branco";
+
+            } else if (meu_array[i + 2] == "azul") {
+
+                classeCor = "azul";
+
+            } else {
+
+                classeCor = "";
+
+            }
+
+            
+
+            document.write("<div class='time " + classeCor +
+                "' onclick='selecionarCard(this)'>");
+
+           
+
+            document.write("<img class='logo' src='" + logos[i / 4] +
+                "' alt='Logo do " + meu_array[i + 1] + "'>");
+
+            
+
+            document.write("<div class='informacoes'>");
+
+            document.write("<strong>Modalidade escolhida:</strong> "
+                + meu_array[i] + "<br>");
+
+            document.write("<strong>Time:</strong> "
+                + meu_array[i + 1] + "<br>");
+
+            document.write("<strong>Quantidade de jogadores:</strong> "
+                + meu_array[i + 3] + "<br>");
+
+            document.write("<strong>Cor predominante:</strong> "
+                + meu_array[i + 2]);
+
+            document.write("</div>");
+
+            document.write("</div>");
+
+        }
+
+    </script>
+
+</body>
+</html>
