@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Exercício 2 - Média de Notas</title>
+</head>
+<body>
+    <script>
+        var notas = new Array();
+        var soma = 0;
+
+        
+        for (var i = 0; i < 4; i++) {
+            var valorDigitado = prompt("Digite a nota " + (i + 1) + ":");
+            
+            notas[i] = parseFloat(valorDigitado); 
+            soma = soma + notas[i];
+        }
+
+        
+        alert("As notas digitadas foram: " + notas.join(", "));
+
+        
+        var media = soma / notas.length;
+        document.write("<h1>Média:</h1>");
+        document.write("<p>A média das notas é: " + media + "</p>");
+    </script>
+</body>
+</html>

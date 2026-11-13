@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script>
+        // Captura a resposta do usuário
+        var resposta = prompt("Você mora na cidade de São Paulo? (Responda sim ou não)");
+
+        // Verifica a resposta e exibe a imagem apropriada
+        if (resposta.toLowerCase() === "sim") {
+            document.write('<img src="images/paulista.jpg" alt="Imagem de São Paulo">');
+        } else {
+            document.write('<img src="images/cotia.png" alt="Imagem de Cotia">');
+        }
+    </script>
+</body>
+</html>
